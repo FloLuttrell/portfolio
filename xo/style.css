@@ -1,0 +1,71 @@
+body {
+  min-width: 400px;
+}
+
+.paper {
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  grid-gap: 5px;
+  transition: transform 1s linear;
+}
+
+.cell {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  border: #3696bf solid;
+  border-radius: 15%;
+  background: #3696bf;
+  transition: background 1s linear, border 1s linear;
+}
+
+.gameAnim {
+  transform: rotatey(180deg);
+}
+.gameAnim .cell {
+  background: #36bf76;
+  border: #36bf76 solid;
+}
+
+button {
+  margin-top: 35px;
+  background-color: #3696bf;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 1s linear;
+}
+.buttonAnim {
+  background-color: #36bf76;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: rgb(10, 34, 73);
+  display: inline-block;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cell {
+  font-size: 34pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
